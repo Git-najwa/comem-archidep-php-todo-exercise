@@ -14,6 +14,8 @@ define('DB_NAME', getenv('TODOLIST_DB_NAME')?: 'todolist');
 define('DB_HOST', getenv('TODOLIST_DB_HOST')?: '127.0.0.1');
 define('DB_PORT', getenv('TODOLIST_DB_PORT')?: '3306');
 
+//erreur ligne 19
+
 $db = new PDO('mysql:host='.DB_HOST.';port='.DB_PORT.';dbname='.DB_NAME, DB_USER, DB_PASS);
 $items = array();
 
